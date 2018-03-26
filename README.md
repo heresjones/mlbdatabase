@@ -14,7 +14,6 @@
    ## Significance:
    Relational databases are designed to protect the end-users from having to sift through the structure of how the information is organized [5]. Indeed, this current database design requires users to sift through the structure of how the data is organized, counter to the philosophy of good relational data principles. 
 
-
    Relational database design also requires a user to understand their data in an in-depth manner[6]. But, with focusing on human readability, several common database development fundamentals are neglected or outright ignored. There are dynamic values, such as batting average, being granted their own columns. There are other values, such as age at season start, which are stored. These values could be generated in a software layer on top of the database. In modern framework design, they are.
 The goal of a normalized relational database is to limit the amount of redundant data that exists in the tables[7]. In the baseball database, when a player hasn’t achieved a certain stat (such as hit that rewards them with third base) then the column remains as a blank or a zero. These are ad-hoc solutions to sidestep dealing with NULL datatypes. In reality, few players achieve every possible feat, so there are numerous instances of this redundant null data throughout the database. This is where a non-relational implementation could be advantageous.
 
