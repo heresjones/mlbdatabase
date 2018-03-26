@@ -7,11 +7,13 @@
 
 ### 1.	Background and Significance
    ## Background:
+   
    The Major League Baseball database was developed originally in the middle of the 20th century by statistician Pete Palmer, digitized in the 1970’s[4]. The information was made available on the internet by Sean Lahman and then moved into a relational database model in the 1990’s with work done by Keith Woolner [4]. 
 
    The database was created and made available by Sean Lahman for the public to track player information and game outcomes[4]. The database is the effort of several individual contributors from non-technical backgrounds. This means that the database is easy to read by humans, as a set of tables of string values and numbers. But, there has been little investigation done into the viability of the database schema from a computer science standpoint. 
 
    ## Significance:
+   
    Relational databases are designed to protect the end-users from having to sift through the structure of how the information is organized [5]. Indeed, this current database design requires users to sift through the structure of how the data is organized, counter to the philosophy of good relational data principles. 
 
    Relational database design also requires a user to understand their data in an in-depth manner[6]. But, with focusing on human readability, several common database development fundamentals are neglected or outright ignored. There are dynamic values, such as batting average, being granted their own columns. There are other values, such as age at season start, which are stored. These values could be generated in a software layer on top of the database. In modern framework design, they are.
@@ -27,6 +29,7 @@ The goal of a normalized relational database is to limit the amount of redundant
    Software and Hardware Requirements: The experimentation will be conducted on a single server using both Oracle SQL and MongoDB NoSQL database software. The server shall have  at least 8GB of RAM, and the main testing computer shall have at least 8GB of RAM. The current database schema and data stores are available to the public and located at Sean Lehman’s website or the MLB website.
 
    ## Process:
+   
    The data will be brought into the Oracle SQL database instance. Then, a copy of the database will be created with a conversion that will take place converting the data into JSON formats required for NoSQL. There are standardized tools created by MongoDB for migrating databases from relational to non-relational formats. Once migrated, some code in the NoSQL test code will be written to take over the production of several of the dynamic database values (such as RBI’s), and those values will be removed from the database.  
 
    The code used to access the servers will be Java running inside of the IntelliJ IDE by Jetbrains. This is determined to be appropriate because both Oracle SQL and MongoDB offer Java libraries for accessing their database software. Tests will be run through console statements, and results will be stored in text files.
