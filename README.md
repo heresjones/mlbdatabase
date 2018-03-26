@@ -1,4 +1,4 @@
-# A Non-Relational Redesign for the Major League Baseball Database Project proposal by Christopher Jones, Eastern CT State University
+### A Non-Relational Redesign for the Major League Baseball Database Project proposal by Christopher Jones, Eastern CT State University
 
 ## Abstract
    In 2015, 73.8 million Major League Baseball tickets were sold[1]. 9% of adults in the United States picked Baseball as their favorite sport, and in 2016, MLB pulled in approximately $10B in revenue [2]. Baseball is a robust statistics-based game[3]. Team managers, fans, and league administration tap these statistics to make decisions and predictions regarding baseball[3]. Sports and academic researchers use this database to understand the nuances of the game.
