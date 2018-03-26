@@ -6,13 +6,13 @@
    The objective of this proposal is to scrutinize the feasibility of a non-relational database model for storing baseball statistics using performance benchmarks as well as an examination of how a non-relational database could be applied. With a new database model, baseball data could be better optimized, organized in a more consistent fashion, and accessed in a more flexible manner. Lessons from this inquiry may also provide value to other sports information management systems.
 
 ### 1.	Background and Significance
-   ## Background:
+   Background:
    
    The Major League Baseball database was developed originally in the middle of the 20th century by statistician Pete Palmer, digitized in the 1970’s[4]. The information was made available on the internet by Sean Lahman and then moved into a relational database model in the 1990’s with work done by Keith Woolner [4]. 
 
    The database was created and made available by Sean Lahman for the public to track player information and game outcomes[4]. The database is the effort of several individual contributors from non-technical backgrounds. This means that the database is easy to read by humans, as a set of tables of string values and numbers. But, there has been little investigation done into the viability of the database schema from a computer science standpoint. 
 
-   ## Significance:
+   Significance:
    
    Relational databases are designed to protect the end-users from having to sift through the structure of how the information is organized [5]. Indeed, this current database design requires users to sift through the structure of how the data is organized, counter to the philosophy of good relational data principles. 
 
@@ -28,7 +28,7 @@ The goal of a normalized relational database is to limit the amount of redundant
 
    Software and Hardware Requirements: The experimentation will be conducted on a single server using both Oracle SQL and MongoDB NoSQL database software. The server shall have  at least 8GB of RAM, and the main testing computer shall have at least 8GB of RAM. The current database schema and data stores are available to the public and located at Sean Lehman’s website or the MLB website.
 
-   ## Process:
+   Process:
    
    The data will be brought into the Oracle SQL database instance. Then, a copy of the database will be created with a conversion that will take place converting the data into JSON formats required for NoSQL. There are standardized tools created by MongoDB for migrating databases from relational to non-relational formats. Once migrated, some code in the NoSQL test code will be written to take over the production of several of the dynamic database values (such as RBI’s), and those values will be removed from the database.  
 
